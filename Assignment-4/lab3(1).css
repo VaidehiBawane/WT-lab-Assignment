@@ -1,0 +1,29 @@
+CATALOG {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+BOOK {
+    display: table-row;
+}
+
+TECHNOLOGY, AUTHOR, PRICE, YEAR {
+    display: table-cell;
+    border: 1px solid black;
+    padding: 8px;
+}
+
+TECHNOLOGY {
+    color: #ff0000;
+    font-size: 20pt;
+}
+
+AUTHOR {
+    color: #0000ff;
+    font-size: 20pt;
+}
+
+PRICE, YEAR {
+    color: #000000;
+}

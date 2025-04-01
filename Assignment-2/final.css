@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Century Gothic, sans-serif;
+}
+
+/* Header Styling */
+header {
+    background-image: url("comp.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 25vh;
+    position: relative;
+}
+
+/* Navigation Bar */
+ul {
+    float: right;
+    margin-top: 25px;
+    list-style: none;
+}
+
+ul li {
+    display: inline-block;
+    background-color: #4CAF50; 
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+ul li a:hover {
+    background-color: #FFD700; 
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+
+/* Positioning the Text */
+.Technology {
+    text-align: center;
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Buttons */
+.button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn {
+    border: 2px solid green;
+    background-color: transparent;
+    padding: 10px 30px;
+    color: green;
+    font-size: 16px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: green;
+    color: white;
+}

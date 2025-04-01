@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="registrationApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+<body ng-controller="RegistrationController">
+    <h2>Registration Form</h2>
+    <form ng-submit="register()">
+        <label>First Name:</label>
+        <input type="text" ng-model="user.firstName" required><br>
+        <p>You are typing: {{ user.firstName }}</p>
+
+        <label>Last Name:</label>
+        <input type="text" ng-model="user.lastName" required><br>
+        <p>You are typing: {{ user.lastName }}</p>
+
+        <label>Username:</label>
+        <input type="text" ng-model="user.username" required><br>
+        <p>You are typing: {{ user.username }}</p>
+
+        <label>Password:</label>
+        <input type="password" ng-model="user.password" required><br>
+        <p>You are typing: {{ user.password }}</p>
+
+        <button type="submit">Register</button>
+    </form>
+
+    <script>
+        var app = angular.module('registrationApp', []);
+        app.controller('RegistrationController', function($scope) {
+            $scope.user = {};
+            $scope.register = function() {
+                console.log("User Registered:", $scope.user);
+                alert("Registration Successful!\nFirst Name: " + $scope.user.firstName + "\nLast Name: " + $scope.user.lastName + "\nUsername: " + $scope.user.username);
+            };
+        });
+    </script>
+</body>
+</html>
